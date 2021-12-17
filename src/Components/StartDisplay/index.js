@@ -4,10 +4,10 @@ import { Container, ButtonChange } from './styles'
 
 const StartDisplay = () => {
 
-    const {time, setTime, numbers, setNumbers} = useDynimicityContext();
+    const {time, setTime, numbers, setNumbers, display} = useDynimicityContext();
 
     return (
-        <Container>
+        <Container style={{display: display[0]}}>
             <div className="changeLevel">
                 <h1>Tempo: {time}s</h1>
 
