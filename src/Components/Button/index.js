@@ -6,7 +6,7 @@ const Button = ({children}) => {
     const { whatToDisplay, btnValue } = useDynimicityContext();
 
     return (
-        <Container onClick={() => {whatToDisplay("Start")}}>
+        <Container onClick={() => {whatToDisplay(btnValue)}}>
             {children}
         </Container>
     );
