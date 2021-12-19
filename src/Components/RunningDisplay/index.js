@@ -1,7 +1,7 @@
 import { useDynimicityContext } from "../../Context/useDynimicityContext";
 import { Container } from "./styles";
 
-const RunningDisplay = (as) => {
+const RunningDisplay = () => {
 
     const {display, time, szTimer, number} = useDynimicityContext();
 

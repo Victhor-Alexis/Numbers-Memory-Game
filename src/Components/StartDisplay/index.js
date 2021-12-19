@@ -11,7 +11,7 @@ const StartDisplay = () => {
             <div className="changeLevel">
                 <h1>Tempo: {time}s</h1>
 
-                <ButtonChange minus onClick={() => setTime(time - 1)}>
+                <ButtonChange minus onClick={() => setTime(2)}>
                     <div className="line"></div>
                     <div className="line"></div>
                 </ButtonChange>

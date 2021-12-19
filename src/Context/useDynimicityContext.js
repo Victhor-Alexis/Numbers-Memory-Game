@@ -24,9 +24,8 @@ const DynimicityProvider = ({children}) => {
                 for (let i = 0; i < numbers; ++i) {
                     realNumber += Math.floor(Math.random() * 10);
                 }
-
+                
                 setNumber(realNumber);
-
                 break;
             
             case "Stop":
