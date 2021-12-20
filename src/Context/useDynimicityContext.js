@@ -9,7 +9,8 @@ const DynimicityProvider = ({children}) => {
     const [display, setDisplay] = useState(["block", "none", "none"]);
     const [btnValue, setBtnValue] = useState("Start");
     const [szTimer, setSzTimer] = useState("80%");
-    const [number, setNumber] = useState(1);
+    const [number, setNumber] = useState("");
+    const [checkNumber, setCheckNumber] = useState("");
 
     const whatToDisplay = (btnValue) => {
         let realNumber = "";
@@ -34,6 +35,13 @@ const DynimicityProvider = ({children}) => {
                 break;
         
             default:
+
+                if (number === checkNumber) {
+                    alert("Acertou!")
+                }
+                else
+                    alert("Errou!")
+
                 setDisplay(["block", "none", "none"]);
                 setBtnValue("Start")
                 break;
@@ -43,7 +51,7 @@ const DynimicityProvider = ({children}) => {
     return (
         <DynimicityContext.Provider value={{time, setTime, numbers, 
                                             setNumbers, display, whatToDisplay,
-                                            btnValue, szTimer, number}}>
+                                            btnValue, szTimer, number, setCheckNumber}}>
             {children}
         </DynimicityContext.Provider>
     );
