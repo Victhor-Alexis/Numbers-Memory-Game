@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useDynimicityContext } from '../../Context/useDynimicityContext'
 import { Container } from './styles'
 
 const VerifyingDisplay = () => {
     
-    const {display, setCheckNumber} = useDynimicityContext();
+    const {display, setCheckNumber, checkNumber} = useDynimicityContext();
 
     return (
         <Container style={{display: display[2]}}>
-            <input type="text" placeholder="response..." onChange={(e) => setCheckNumber(e.target.value)}></input>
+            <input type="text" placeholder="response..." value={checkNumber} onChange={(e) => setCheckNumber(e.target.value)}/>
         </Container>
     )
 }
