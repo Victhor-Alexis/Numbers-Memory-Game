@@ -7,10 +7,31 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         margin: 1.5rem 0;
+        position: relative;
 
         h1 {
             color: white;
             width: 16rem;
+        }
+
+        @keyframes coolMove {
+            0%   {top: 0}
+            25%  {top: -0.15rem}
+            50%  {top: 0}
+            75%  {top: 0.25rem}
+            100% {top: 0}
+        }
+
+        span {
+            cursor: pointer;
+            position: relative;
+
+            :hover {
+                animation-name: coolMove;
+                animation-duration: 0.75s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
         }
     }
 `;
