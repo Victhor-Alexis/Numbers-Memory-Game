@@ -1,4 +1,6 @@
 import { createContext, useContext, useState} from "react";
+import Cookie from 'js-cookie'
+import { useEffect } from "react";
 
 const DynimicityContext = createContext({});
 
@@ -11,6 +13,17 @@ const DynimicityProvider = ({children}) => {
     const [szTimer, setSzTimer] = useState("80%");
     const [number, setNumber] = useState("");
     const [checkNumber, setCheckNumber] = useState("");
+
+    useEffect(() => {
+        const retrievedNumbers = Cookie.get("numbersAmount");
+        const retrievedTime = Cookie.get("timeAmount");
+
+        if (retrievedNumbers)
+            setNumbers(retrievedNumbers);
+
+        if (retrievedTime)
+            setTime(retrievedTime)
+    }, [])
 
     const whatToDisplay = (btnValue) => {
         let realNumber = "";
@@ -35,6 +48,7 @@ const DynimicityProvider = ({children}) => {
                 break;
         
             default:
+                alert("Resposta: "+number)
 
                 if (number === checkNumber) {
                     alert("Acertou!")
@@ -44,6 +58,7 @@ const DynimicityProvider = ({children}) => {
 
                 setDisplay(["block", "none", "none"]);
                 setBtnValue("Start")
+                setCheckNumber("")
                 break;
         }
     }
@@ -51,7 +66,8 @@ const DynimicityProvider = ({children}) => {
     return (
         <DynimicityContext.Provider value={{time, setTime, numbers, 
                                             setNumbers, display, whatToDisplay,
-                                            btnValue, szTimer, number, setCheckNumber}}>
+                                            btnValue, szTimer, number, 
+                                            setCheckNumber, checkNumber}}>
             {children}
         </DynimicityContext.Provider>
     );
