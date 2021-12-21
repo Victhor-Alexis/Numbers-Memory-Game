@@ -21,7 +21,7 @@ const StartDisplay = () => {
 
                 <ButtonChange onClick={() => {
                     setTime(parseInt(time) + 1)
-                    Cookie.set("timeAmount", time+1)
+                    Cookie.set("timeAmount", parseInt(time)+1)
                 }}>
                     <div className="line"></div>
                     <div className="line"></div>
@@ -41,7 +41,7 @@ const StartDisplay = () => {
 
                 <ButtonChange onClick={() => {
                     setNumbers(parseInt(numbers) + 1)
-                    Cookie.set('numbersAmount', numbers+1)
+                    Cookie.set('numbersAmount', parseInt(numbers)+1)
                 }}>
                     <div className="line"></div>
                     <div className="line"></div>
