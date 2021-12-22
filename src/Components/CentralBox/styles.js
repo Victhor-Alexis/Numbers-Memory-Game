@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 40%;
     height: 36vw;
+    max-width: 40rem;
+    max-height: 35rem;
     min-width: 20rem;
     min-height: 24rem;
     position: absolute;

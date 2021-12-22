@@ -15,6 +15,17 @@ export const Container = styled.div`
     transition: 0.5s;
     background-color: #868597;
 
+    .close {
+        display: none;
+
+        svg {
+            position: absolute;
+            top: 0.25rem;
+            left: 0.25rem;
+            cursor: pointer;
+        }
+    }
+
     input {
         width: 65%;
         border: 2px solid white;
