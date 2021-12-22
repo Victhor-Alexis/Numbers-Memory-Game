@@ -19,4 +19,22 @@ export const Container = styled.div`
         margin: 0 auto;
         text-align: center;
     }
+
+    @media screen and (max-width: 1300px) {
+        .timeBar {
+            margin: 3rem auto 3rem auto;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        .timeBar {
+            margin: 2rem auto 2rem auto;
+        }
+    }
+
+    @media screen and (max-width: 1048px) {
+        .timeBar {
+            margin: 1.5rem auto 1.2rem auto;
+        }
+    }
 `;

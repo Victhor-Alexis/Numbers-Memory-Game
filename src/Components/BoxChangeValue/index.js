@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import { useDynimicityContext } from '../../Context/useDynimicityContext'
 import { Container } from './styles'
+import Cookie from 'js-cookie'
 
 const BoxChangeValue = ({left, displayBox, type}) => {
 
     const [value, setValue] = useState("");
-    const {setNumbers, setTime} = useDynimicityContext();
+    const {setNumbers, setTime, time, numbers} = useDynimicityContext();
 
     return (
         <Container left={left} displayBox={displayBox}>
@@ -21,8 +22,10 @@ const BoxChangeValue = ({left, displayBox, type}) => {
             <button onClick={() => {
                 if (type === 1) {
                     setTime(value)
+                    Cookie.set("timeAmount", value)
                 } else {
                     setNumbers(value)
+                    Cookie.set("numbersAmount", value)
                 }
             }}>Mudar</button>
             
