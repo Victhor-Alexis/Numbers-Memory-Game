@@ -8,10 +8,12 @@ export const Container = styled.div`
         justify-content: center;
         margin: 1.5rem 0;
         position: relative;
+        align-items: center;
 
         h1 {
             color: white;
             width: 16rem;
+            vertical-align: center;
         }
 
         @keyframes coolMove {
@@ -34,6 +36,29 @@ export const Container = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 1240px) {
+        margin-top: 14%;
+
+        .changeLevel {
+            margin: 1rem 4rem;
+            h1 {
+                font-size: 21px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1048px) {
+        .changeLevel {
+            margin: 1rem 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: 1048px) {
+        .changeLevel {
+            margin: 1rem 1rem;
+        }
+    }
 `;
 
 export const ButtonChange = styled.div`
@@ -44,6 +69,8 @@ export const ButtonChange = styled.div`
     margin: 0 2rem;
     cursor: pointer;
     transition: 0.4s;
+    min-width: 2.2rem;
+    min-height: 2rem;
 
     :last-of-type {
         margin: 0;
@@ -67,5 +94,11 @@ export const ButtonChange = styled.div`
     .line:last-of-type {
         transform: rotate(90deg) translateX(-25%);
         display: ${props => props.minus ? "none" : "block"};
+    }
+
+    @media screen and (max-width: 1240px) {
+        .line {
+            width: 1.4rem;
+        }
     }
 `;

@@ -13,4 +13,8 @@ export const Container = styled.div`
         font-size: 21px;
         color: white;
     }
+
+    @media screen and (max-width: 1280px) {
+        margin-top: 5rem;
+    }
 `;
