@@ -1,7 +1,10 @@
 figma link: https://www.figma.com/file/qP50iNSjMXMHncZjOTBvZk/Memory-game?node-id=0%3A1
 
+<br/>
 
 This app was made to confirm if someone with an avarage memory (like me) can be able to memorize a 'big' string of numbers through pratice. My goal is to be capable to memorize an 80 digit number in 80 seconds, as the student at Carnegie Mellon University who participate of the study about how chunking can help someone to memorize a string of numbers performed by Ericsson, Chase and Feloon (1980).
+
+<br/>
 
 1. Initial screen:
 
@@ -9,9 +12,28 @@ This app was made to confirm if someone with an avarage memory (like me) can be 
 
 Here you can decide how much time the number will continue at the display and the amount of numbers.
 
+<br/><br/>
+
 1.1 Ways to change the initial values:
 
-![final_61cba4a22fbfe800d1a0fd05_423367](https://user-images.githubusercontent.com/57818113/147615868-0e4da924-0180-4533-87c5-e9e19e4fc489.gif)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/57818113/147670205-5374c637-06ee-413c-a51f-4e29c4220768.gif" alt="animated" />
+</p>
+
+Besides the buttons, we can change the values directly by clicking on them, when a bigger range change is required.
+
+<br/><br/>
+
+2. Playing:
+ 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/57818113/147669576-7931f91a-9cb6-4077-a4c6-7b5bab51d04a.gif" alt="animated" />
+</p>
+
+<br/>
+
+* The application is using cookies to store the values containing the amount of numbers and time. The cookies expire after 24 hours.
+
 
 
 
