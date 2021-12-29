@@ -1,72 +1,23 @@
-Link do protótipo no figma: https://www.figma.com/file/qP50iNSjMXMHncZjOTBvZk/Memory-game?node-id=0%3A1
+figma link: https://www.figma.com/file/qP50iNSjMXMHncZjOTBvZk/Memory-game?node-id=0%3A1
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app was made to confirm if someone with an avarage memory (like me) can be able to memorize a 'big' string of numbers through pratice. My goal is to be capable to memorize an 80 digit number in 80 seconds, as the student at Carnegie Mellon University who participate of the study about how chunking can help someone to memorize a string of numbers performed by Ericsson, Chase and Feloon (1980).
 
-## Available Scripts
+1. Initial screen:
 
-In the project directory, you can run:
+![telainicial2](https://user-images.githubusercontent.com/57818113/147614688-639a806b-ba51-43b9-aff3-3140008e3d56.png)
 
-### `npm start`
+Here you can decide how much time the number will continue at the display and the amount of numbers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.1 Ways to change the initial values:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![final_61cba4a22fbfe800d1a0fd05_423367](https://user-images.githubusercontent.com/57818113/147615868-0e4da924-0180-4533-87c5-e9e19e4fc489.gif)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
