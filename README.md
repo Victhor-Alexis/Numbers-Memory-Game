@@ -1,4 +1,22 @@
-figma link: https://www.figma.com/file/qP50iNSjMXMHncZjOTBvZk/Memory-game?node-id=0%3A1
+figma prototype link: https://www.figma.com/file/qP50iNSjMXMHncZjOTBvZk/Memory-game?node-id=0%3A1
+
+-----------------------------------------------------------------
+How to run:
+
+In the project directory, you can run:
+
+<h2>yarn</h2>
+
+and after, 
+
+<h2>yarn start</h2>
+
+Open http://localhost:3000 to view it in the browser.
+
+The page will reload if you make edits.
+You will also see any lint errors in the console.
+
+-----------------------------------------------------------------
 
 <br/>
 
