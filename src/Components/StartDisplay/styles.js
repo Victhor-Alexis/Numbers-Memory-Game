@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin-top: 19%;
+    display: flex;
 
     .changeLevel {
         display: flex;
@@ -14,6 +14,7 @@ export const Container = styled.div`
             color: white;
             width: 16rem;
             vertical-align: center;
+            text-align: center;
         }
 
         @keyframes coolMove {
@@ -38,8 +39,6 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 1240px) {
-        margin-top: 14%;
-
         .changeLevel {
             margin: 1rem 4rem;
             h1 {
@@ -66,7 +65,7 @@ export const ButtonChange = styled.div`
     height: 2.5rem;
     background-color: #AC3E11;
     border-radius: 0.5rem;
-    margin: 0 2rem;
+    margin: -10rem 2rem 0 2rem;
     cursor: pointer;
     transition: 0.4s;
     min-width: 2.2rem;

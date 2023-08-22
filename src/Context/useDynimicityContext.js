@@ -7,7 +7,7 @@ const DynimicityContext = createContext({});
 const DynimicityProvider = ({children}) => {
 
     const [time, setTime] = useState(60);
-    const [numbers, setNumbers] = useState(12);
+    const [numbers, setNumbers] = useState(5);
     const [display, setDisplay] = useState(["block", "none", "none"]);
     const [btnValue, setBtnValue] = useState("Start");
     const [szTimer, setSzTimer] = useState("80%");
@@ -24,6 +24,20 @@ const DynimicityProvider = ({children}) => {
         if (retrievedTime)
             setTime(retrievedTime)
     }, [])
+
+    const verifyErrorsAmount = (inputNum, rightNum) => {   
+        let amount = 0;
+        const inputArr = Array.from(String(inputNum), Number);
+        const rightArr = Array.from(String(rightNum), Number);
+        
+        for (let i = 0; i < inputArr.length; ++i) {
+            if (inputArr[i] != rightArr[i]) {
+                ++amount;
+            }
+        }
+
+        return amount;
+    }
 
     const whatToDisplay = (btnValue) => {
         let realNumber = "";
@@ -48,13 +62,24 @@ const DynimicityProvider = ({children}) => {
                 break;
         
             default:
-                alert("Resposta: "+number)
-
                 if (number === checkNumber) {
-                    alert("Acertou!")
+                    alert("Acertou!");
+                    setNumbers(1 + numbers);
                 }
-                else
-                    alert("Errou!")
+                else {
+                    const errosQtd = verifyErrorsAmount(number, checkNumber);
+                    const diffErros = Math.abs(numbers - errosQtd);
+
+                    alert(`Errou ${errosQtd} número(s)`);
+                    
+                    if (diffErros <= 5) {
+                        setNumbers(5);
+                    } else {
+                        setNumbers(diffErros);
+                    }
+                }
+
+                alert("Resposta: "+number);
 
                 setDisplay(["block", "none", "none"]);
                 setBtnValue("Start")

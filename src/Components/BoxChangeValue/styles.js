@@ -3,14 +3,14 @@ import styled  from "styled-components";
 export const Container = styled.div`
     width: 10rem;
     height: 5.2rem;
-    top: -6.5rem;
+    top: -6.6rem;
     position: absolute;
-    z-index: ${props => props.displayBox ? "1" : "-1"};
+    z-index: 999;
     border: 2px solid white;
     border-radius: 0 1rem 0rem 0;
     border-bottom: 0;
     text-align: center;
-    left: ${props => props.left ? "7.7rem" : "5rem"};
+    left: ${props => props.left ? "37.2rem" : "5rem"};
     opacity: ${props => props.displayBox ? "1" : "0"};
     transition: 0.5s;
     background-color: #868597;
@@ -56,7 +56,7 @@ export const Container = styled.div`
         left: -0.08rem;
     }
 
-    @media screen and (max-width: 1240px) {
+    /* @media screen and (max-width: 1240px) {
         left: ${props => props.left ? "-0.4rem" : "-2.5rem"};
     }
 
@@ -66,5 +66,5 @@ export const Container = styled.div`
 
     @media screen and (min-width: 1565px) {
         left: ${props => props.left ? "11.4rem" : "9rem"};
-    }
+    } */
 `;

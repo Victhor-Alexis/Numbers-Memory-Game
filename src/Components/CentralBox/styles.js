@@ -1,18 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 40%;
-    height: 36vw;
-    max-width: 40rem;
-    max-height: 35rem;
-    min-width: 20rem;
-    min-height: 24rem;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #868597;
     border-top: 2rem solid #A093A6;
     border-bottom: 2rem solid #A093A6;
-    border-radius: 2rem;
+    padding-top: 11rem;
 `;

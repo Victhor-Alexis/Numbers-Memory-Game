@@ -17,7 +17,7 @@ const StartDisplay = () => {
             <BoxChangeValue displayBox={displayBoxChange[0]} type={1}/>
                 <h1>Tempo: <span onClick={() => displayBoxChange[0] ? setDisplayBoxChange([false, false]) : setDisplayBoxChange([true, false])}>{time}s</span></h1>
 
-                <ButtonChange minus onClick={() => {
+                {/* <ButtonChange minus onClick={() => {
                     setTime(time - 1)
                     Cookie.set("timeAmount", time-1)
                 }}>
@@ -31,14 +31,14 @@ const StartDisplay = () => {
                 }}>
                     <div className="line"></div>
                     <div className="line"></div>
-                </ButtonChange>
+                </ButtonChange> */}
             </div>
 
             <div className="changeLevel">
                 <BoxChangeValue left={true} displayBox={displayBoxChange[1]} type={2}/>
                 <h1> Números: <span onClick={() => displayBoxChange[1] ? setDisplayBoxChange([false, false]) : setDisplayBoxChange([false, true])}>{numbers}</span></h1>
 
-                <ButtonChange minus onClick={() => {
+                {/* <ButtonChange minus onClick={() => {
                     setNumbers(numbers - 1)
                     Cookie.set('numbersAmount', numbers-1)
                 }}>
@@ -52,7 +52,7 @@ const StartDisplay = () => {
                 }}>
                     <div className="line"></div>
                     <div className="line"></div>
-                </ButtonChange>
+                </ButtonChange> */}
             </div>
         </Container>
     )
